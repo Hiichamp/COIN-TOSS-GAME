@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import heads from './img/heads.png';
+import tails from './img/tails.png';
 
 function App() {
   const [result, setResult] = useState('');
@@ -25,7 +26,7 @@ function App() {
       </button>
       <div className="mt-8">
         <img
-          src={result === 'Heads' ? '/heads.png' : '/tails.png'}
+          src={result === 'Heads' ? heads : tails }
           alt="Coin"
           className={`w-24 h-24  md:w-32 md:h-32 ${spinning ? 'animate-spin' : ''}`}
         />
